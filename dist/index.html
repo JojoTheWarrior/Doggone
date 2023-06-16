@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doggone</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="dogs.js"></script>
+    <script src="index.js"></script>
+</head>
+<body class="">
+    <!--Navigation bar-->
+    <div class="flex items-center justify-center border-2 border-red-700 h-40">
+        <div class="">
+            <ul class="flex text-3xl text-slate-700 space-x-8">
+                <li>
+                    <a class="hover:text-sky-500">About</a>
+                </li>
+                <li>
+                    <a class="hover:text-sky-500">Game</a>
+                </li>
+                <li>
+                    <a class="hover:text-sky-500">Demonstration</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--The game-->
+    <div class="justify-center w-1/4 hidden lg:grid grid-cols-1 border-2 border-sky-500 h-full">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+    </div>
+    <div id="mario" class="w-1/2 h-full border-2 border-purple-700">
+        this is the inner html
+    </div>
+    <div>
+        <button class="text-3xl text-sky-500 bg-slate-100 rounded-lg hover:bg-sky-500 hover:text-slate-100 p-5" onclick="handleClickNewDog()">
+            New Dog!
+        </button>
+
+        <input oninput="handleChange()" id="inp" type="text" class="border-8 border-black">
+        <p id="score">Your score is: 0</p>
+    </div>
+</body>
+</html>
