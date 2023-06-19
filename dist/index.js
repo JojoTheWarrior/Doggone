@@ -6,6 +6,8 @@ score = 0;
 
 tot = 0;
 
+// start the program
+
 function handleClickNewDog(){
     var the_div = document.getElementById("mario");
 
