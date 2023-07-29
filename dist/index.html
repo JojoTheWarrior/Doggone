@@ -6,42 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doggone</title>
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="index.css">    
     <script src="dogs.js"></script>
     <script src="index.js"></script>
 </head>
 <body class="">
     <!--Navigation bar-->
-    <div class="flex items-center justify-center border-2 border-red-700 h-40">
-        <div class="">
-            <ul class="flex text-3xl text-slate-700 space-x-8">
-                <li>
-                    <a class="hover:text-sky-500">About</a>
-                </li>
-                <li>
-                    <a class="hover:text-sky-500">Game</a>
-                </li>
-                <li>
-                    <a class="hover:text-sky-500">Demonstration</a>
-                </li>
-            </ul>
-        </div>
+    <div id="nav" class="flex items-center border-2 border-red-700 h-40">
+        <img id="logo" src="../assets/img/Logo.png" width="5%" height="5%" class=""></img>
+        <ul class="flex text-3xl text-slate-700 space-x-8">
+            <li>
+                <a href="about.html" class="hover-underline hover:text-sky-500 p-5">About</a>
+            </li>
+            <li>
+                <a class="hover-underline hover:text-sky-500 p-5">Game</a>
+            </li>
+            <li>
+                <a class="hover-underline hover:text-sky-500 p-5">Demonstration</a>
+            </li>
+        </ul>
+    </div>
+    <!--Text-->
+    <div id="intro-text" class="flex font-sans justify-center justify-self-center text-3xl">
+        <p>
+            Are you ready to learn your dog breeds? Press the "New Dog" button to get started!
+        </p>
     </div>
     <!--The game-->
-    <div class="justify-center w-1/4 hidden lg:grid grid-cols-1 border-2 border-sky-500 h-full">
-        <div>01</div>
-        <div>02</div>
-        <div>03</div>
-    </div>
-    <div id="mario" class="w-1/2 h-full border-2 border-purple-700">
-        this is the inner html
-    </div>
-    <div>
-        <button class="text-3xl text-sky-500 bg-slate-100 rounded-lg hover:bg-sky-500 hover:text-slate-100 p-5" onclick="handleClickNewDog()">
-            New Dog!
-        </button>
+    <div class="">
+        <!--Dog image-->
+        <div id="dog-image" class="flex justify-center">
+            <img src="../assets/img/Doggone!.png"></img>
+        </div>
+        <!--Buttons-->
+        <div class="flex justify-center">
+            <div class="dog-button justify-center content-center">
+            <button class="text-3xl text-sky-500 bg-slate-100 rounded-lg hover:bg-sky-500 hover:text-slate-100 p-5" onclick="handleClickNewDog()">
+                New Dog!
+            </button>
+            </div>
 
-        <input oninput="handleChange()" id="inp" type="text" class="border-8 border-black">
-        <p id="score">Your score is: 0</p>
+            <div id="what-dog-div" class="dog-button">
+            <button id="what-dog" class="text-3xl text-sky-500 bg-slate-100 rounded-lg hover:bg-sky-500 hover:text-slate-100 p-5" onclick="defineDog()">
+                What's that Dog?
+            </button>
+            </div>
+        </div>
+        <!--Dog info box-->
+        <div id="dog-info" class="flex justify-center text-3xl">
+
+        </div>
+        <!--Guessing Box-->
+        <div id="guess-box" class="flex justify-center text-3xl">
+            
+        </div>
+        <!--Score message-->
+        <div id="score-box" class="flex justify-center font-sans text-3xl">
+           
+        </div>
     </div>
 </body>
 </html>

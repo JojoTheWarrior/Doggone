@@ -3,6 +3,9 @@ module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
     extend: {},
+    container: {
+      center: true,
+    }
   },
   plugins: [],
 }

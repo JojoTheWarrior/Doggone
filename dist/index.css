@@ -1,0 +1,54 @@
+.dog-button {
+    margin-left: 25px !important;
+    margin-top: 25px !important;
+}
+
+#intro-text {
+    margin-top: 25px !important;
+}
+
+#dog-image {
+    margin-top: 25px !important;
+}
+
+#dog-image img {
+    width: 400px !important;
+    height: 260px !important;
+}
+
+#dog-info {
+    margin: 10px !important;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+#logo {
+    justify-self: start !important;
+}
+
+/* Is this necessary? */
+.hover-underline {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #0ea4e9;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.hover-underline:hover::after {
+    width: 60%;  
+    left: 20%;
+}

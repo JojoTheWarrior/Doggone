@@ -1,15 +1,29 @@
 {
   "name": "doggone",
   "version": "1.0.0",
-  "description": "",
+  "description": "doggone it...",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "open-cli dist/index.html",
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.4.5",
+    "open-cli": "^7.2.0",
     "tailwindcss": "^3.3.2"
-  }
+  },
+  "dependencies": {
+    "openai": "^3.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JojoTheWarrior/Doggone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JojoTheWarrior/Doggone/issues"
+  },
+  "homepage": "https://github.com/JojoTheWarrior/Doggone#readme"
 }
